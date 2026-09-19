@@ -1,0 +1,51 @@
+[
+  {
+    "id": "REF-001",
+    "version": "1.0",
+    "status": "approved",
+    "title": "Refund eligibility",
+    "tags": [
+      "refund",
+      "eligibility",
+      "order"
+    ],
+    "text": "A refund may be considered only after order status and customer eligibility have been verified. Missing eligibility or order information requires human review."
+  },
+  {
+    "id": "REF-002",
+    "version": "1.0",
+    "status": "approved",
+    "title": "Illustrative refund threshold",
+    "tags": [
+      "refund",
+      "amount",
+      "limit"
+    ],
+    "text": "Sample only: amounts up to ₹5,000 may be considered when eligibility, order status, and authorization are confirmed. Higher amounts require human approval. Replace with approved policy."
+  },
+  {
+    "id": "SEC-001",
+    "version": "1.0",
+    "status": "approved",
+    "title": "Authorization",
+    "tags": [
+      "authorization",
+      "security",
+      "permission"
+    ],
+    "text": "An operational action requires verified identity and permission. Missing or denied authorization must prevent execution."
+  },
+  {
+    "id": "SEC-002",
+    "version": "1.0",
+    "status": "approved",
+    "title": "Escalation",
+    "tags": [
+      "uncertain",
+      "missing",
+      "conflicting",
+      "review"
+    ],
+    "text": "When evidence is missing, conflicting, outdated, or insufficient, do not assume approval; escalate to an authorized reviewer."
+  }
+]
