@@ -1,0 +1,17 @@
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      ENVIRONMENT: development
+      DATABASE_URL: sqlite:///./data/agentguard.db
+      AGENTGUARD_API_KEY: ${AGENTGUARD_API_KEY:-change-me-in-production}
+    volumes: ["./data:/app/data"]
+  ui:
+    build: .
+    command: ["streamlit","run","app.py","--server.address=0.0.0.0","--server.port=8501"]
+    ports: ["8501:8501"]
+    environment:
+      AGENTGUARD_API_URL: http://api:8000
+      AGENTGUARD_API_KEY: ${AGENTGUARD_API_KEY:-change-me-in-production}
+    depends_on: [api]
